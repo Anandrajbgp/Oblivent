@@ -9,7 +9,8 @@ import {
   BookOpen, 
   Users, 
   BarChart3,
-  Brain
+  Brain,
+  Flame
 } from "lucide-react";
 
 export default function TestDashboardPage() {
