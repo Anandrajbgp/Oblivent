@@ -1,11 +1,7 @@
-import { Metadata } from "next";
+"use client";
+
 import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-export const metadata: Metadata = {
-  title: "Contact Us - Oblivent",
-  description: "Get in touch with Oblivent team for support and inquiries",
-};
 
 export default function ContactPage() {
   return (
