@@ -102,9 +102,9 @@ export default function TermsPage() {
                 7. Contact Information
               </h2>
               <div className="text-gray-600 dark:text-gray-300">
-                <p>Email: legal@oblivent.com</p>
-                <p>Phone: +91 98765 43210</p>
-                <p>Address: Mumbai, India</p>
+                <p>Email: teamoblivent@gmail.com</p>
+                <p>Phone: +91 98357 42586</p>
+                <p>Address: Bhagalpur, Bihar, India</p>
               </div>
             </section>
           </div>

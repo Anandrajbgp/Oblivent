@@ -102,8 +102,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 dark:text-white">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-300">hello@oblivent.com</p>
-                    <p className="text-gray-600 dark:text-gray-300">support@oblivent.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">teamoblivent@gmail.com</p>
                   </div>
                 </div>
 
@@ -113,8 +112,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 dark:text-white">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-300">+91 98765 43210</p>
-                    <p className="text-gray-600 dark:text-gray-300">+91 98765 43211</p>
+                    <p className="text-gray-600 dark:text-gray-300">+91 98357 42586</p>
                   </div>
                 </div>
 
@@ -126,7 +124,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-gray-900 dark:text-white">Address</h3>
                     <p className="text-gray-600 dark:text-gray-300">
                       Oblivent Technologies Pvt. Ltd.<br />
-                      Mumbai, Maharashtra, India
+                      Bhagalpur, Bihar, India
                     </p>
                   </div>
                 </div>
@@ -154,7 +152,7 @@ export default function ContactPage() {
                 <Button 
                   variant="outline" 
                   className="w-full justify-start border-2 border-green-200 dark:border-green-800 text-green-600 dark:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/20"
-                  onClick={() => window.open('https://wa.me/919876543210', '_blank')}
+                  onClick={() => window.open('https://wa.me/919835742586', '_blank')}
                 >
                   <MessageCircle className="w-5 h-5 mr-3" />
                   WhatsApp Support
@@ -163,7 +161,7 @@ export default function ContactPage() {
                 <Button 
                   variant="outline" 
                   className="w-full justify-start border-2 border-blue-200 dark:border-blue-800 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20"
-                  onClick={() => window.open('mailto:support@oblivent.com', '_self')}
+                  onClick={() => window.open('mailto:teamoblivent@gmail.com', '_self')}
                 >
                   <Mail className="w-5 h-5 mr-3" />
                   Email Support
@@ -172,7 +170,7 @@ export default function ContactPage() {
                 <Button 
                   variant="outline" 
                   className="w-full justify-start border-2 border-purple-200 dark:border-purple-800 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20"
-                  onClick={() => window.open('tel:+919876543210', '_self')}
+                  onClick={() => window.open('tel:+919835742586', '_self')}
                 >
                   <Phone className="w-5 h-5 mr-3" />
                   Call Us

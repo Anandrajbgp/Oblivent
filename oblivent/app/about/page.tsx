@@ -142,21 +142,21 @@ export default function AboutPage() {
                   <Users className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Email</h3>
-                <p className="text-gray-600 dark:text-gray-300">hello@oblivent.com</p>
+                <p className="text-gray-600 dark:text-gray-300">teamoblivent@gmail.com</p>
               </div>
               <div>
                 <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-6 h-6 text-green-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Phone</h3>
-                <p className="text-gray-600 dark:text-gray-300">+91 98765 43210</p>
+                <p className="text-gray-600 dark:text-gray-300">+91 98357 42586</p>
               </div>
               <div>
                 <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-6 h-6 text-purple-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Location</h3>
-                <p className="text-gray-600 dark:text-gray-300">Mumbai, India</p>
+                <p className="text-gray-600 dark:text-gray-300">Bhagalpur, Bihar, India</p>
               </div>
             </div>
           </div>

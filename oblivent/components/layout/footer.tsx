@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   Mail, 
   Phone, 
@@ -157,12 +158,14 @@ export function Footer() {
                 viewport={{ once: true }}
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500">
-                    <Sparkles className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                    Oblivent
-                  </span>
+                  <Image 
+                    src="/oblivent-logo.png" 
+                    alt="Oblivent Logo" 
+                    width={48} 
+                    height={48}
+                    className="h-12 w-auto" 
+                    priority
+                  />
                 </div>
                 
                 <p className="text-gray-300 leading-relaxed mb-6">
@@ -174,15 +177,15 @@ export function Footer() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3 text-gray-400">
                     <Mail className="w-4 h-4" />
-                    <span className="text-sm">hello@oblivent.com</span>
+                    <span className="text-sm">teamoblivent@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-400">
                     <Phone className="w-4 h-4" />
-                    <span className="text-sm">+91 98765 43210</span>
+                    <span className="text-sm">+91 98357 42586</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-400">
                     <MapPin className="w-4 h-4" />
-                    <span className="text-sm">Mumbai, India</span>
+                    <span className="text-sm">Bhagalpur, Bihar, India</span>
                   </div>
                 </div>
               </motion.div>

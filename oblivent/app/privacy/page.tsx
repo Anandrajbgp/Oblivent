@@ -93,9 +93,9 @@ export default function PrivacyPage() {
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <div className="mt-4 text-gray-600 dark:text-gray-300">
-                <p>Email: privacy@oblivent.com</p>
-                <p>Phone: +91 98765 43210</p>
-                <p>Address: Mumbai, India</p>
+                <p>Email: teamoblivent@gmail.com</p>
+                <p>Phone: +91 98357 42586</p>
+                <p>Address: Bhagalpur, Bihar, India</p>
               </div>
             </section>
           </div>
