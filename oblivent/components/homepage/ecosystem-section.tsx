@@ -14,14 +14,14 @@ const getBaseCount = (baseValue: number) => {
   return baseValue + daysPassed;
 };
 
-// Feature data
+// Enhanced trust-building stats for ecosystem
 const ecosystemFeatures = [
-  { icon: Globe, count: getBaseCount(150000), suffix: "+", label: "Global Users", isK: true },
-  { icon: Users, count: getBaseCount(25000), suffix: "+", label: "Active Learners", isK: true },
-  { icon: Rocket, count: getBaseCount(500), suffix: "+", label: "Apps Deployed", isK: false },
-  { icon: Zap, count: 99.9, suffix: "%", label: "Uptime", isK: false },
-  { icon: Brain, count: getBaseCount(1000), suffix: "+", label: "AI Features", isK: false },
-  { icon: Shield, count: 100, suffix: "%", label: "Secure", isK: false },
+  { icon: Users, count: getBaseCount(250000), suffix: "+", label: "Happy Users", isK: true },
+  { icon: Globe, count: getBaseCount(50000), suffix: "+", label: "Active Learners", isK: true },
+  { icon: Rocket, count: getBaseCount(15000), suffix: "+", label: "Successful Projects", isK: true },
+  { icon: Zap, count: 99.9, suffix: "%", label: "System Uptime", isK: false },
+  { icon: Brain, count: getBaseCount(2500000), suffix: "+", label: "Payouts Given", prefix: "₹", isK: true },
+  { icon: Shield, count: 4.8, suffix: "/5", label: "User Rating", isK: false },
 ];
 
 // Counter component
@@ -212,6 +212,7 @@ export function EcosystemSection() {
                   suffix={feature.suffix}
                   duration={2}
                   isK={feature.isK}
+                  prefix={feature.prefix || ""}
                 />
               </div>
 
@@ -220,15 +221,75 @@ export function EcosystemSection() {
           ))}
         </motion.div>
 
-        {/* Bottom CTA */}
+        {/* Additional Trust Indicators */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="text-center mt-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 mb-16"
+        >
+          {[
+            { number: 99, suffix: "%", label: "Customer Satisfaction" },
+            { number: 24, suffix: "/7", label: "Support Available" },
+            { number: 15000, suffix: "+", label: "Certificates Issued", isK: true },
+            { number: 100, suffix: "%", label: "Secure Platform" },
+          ].map((stat, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.05 }}
+              className="text-center p-6 bg-gradient-to-br from-white/80 to-purple-50/80 backdrop-blur-sm rounded-2xl border border-purple-100 shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <div className="text-3xl font-bold text-purple-600 mb-2">
+                <Counter
+                  end={stat.number}
+                  suffix={stat.suffix}
+                  duration={2}
+                  isK={stat.isK}
+                />
+              </div>
+              <div className="text-gray-600 font-medium">{stat.label}</div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Trust Badges */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 1.4 }}
+          className="flex flex-wrap justify-center items-center gap-8 mt-12 mb-16"
+        >
+          {[
+            "ISO Certified",
+            "SSL Secured",
+            "GDPR Compliant",
+            "24/7 Monitored",
+            "Bank-Grade Security",
+            "Award Winning"
+          ].map((badge, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.1 }}
+              className="flex items-center gap-2 bg-green-50 border border-green-200 rounded-full px-4 py-2"
+            >
+              <Shield className="w-4 h-4 text-green-600" />
+              <span className="text-green-700 font-medium text-sm">{badge}</span>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Bottom CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 1.6 }}
+          className="text-center"
         >
           <p className="text-lg text-gray-600 mb-6">
-            Join thousands of users already transforming their digital experience
+            Join <span className="font-bold text-purple-600">2,50,000+</span> users already transforming their digital experience
+          </p>
+          <p className="text-sm text-gray-500">
+            Trusted by individuals and businesses worldwide • Founded in 2020 • Serving 50+ countries
           </p>
         </motion.div>
       </div>

@@ -386,31 +386,7 @@ export function TestimonialsSection() {
           </Button>
         </motion.div>
 
-        {/* Overall Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 1 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-        >
-          {[
-            { number: "4.8", suffix: "/5", label: "Average Rating" },
-            { number: "150", suffix: "K+", label: "Happy Users" },
-            { number: "99", suffix: "%", label: "Satisfaction" },
-            { number: "24/7", suffix: "", label: "Support" },
-          ].map((stat, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              className="text-center p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-purple-100"
-            >
-              <div className="text-3xl font-bold text-purple-600 mb-2">
-                <Counter end={stat.number} suffix={stat.suffix} />
-              </div>
-              <div className="text-gray-600 font-medium">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
+        
       </div>
     </section>
   );
