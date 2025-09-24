@@ -2,12 +2,12 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { 
-  BookOpen, 
-  Building2, 
-  Trophy, 
-  TrendingUp, 
-  Smartphone, 
+import {
+  BookOpen,
+  Building2,
+  Trophy,
+  TrendingUp,
+  Smartphone,
   ShoppingBag,
   Star,
   Zap
@@ -146,6 +146,12 @@ const platforms = [
   },
 ];
 
+// Function to handle platform clicks (assuming it's defined elsewhere or will be)
+const handlePlatformClick = (platform: { id: string; title: string }) => {
+  console.log(`Navigating to ${platform.title} (${platform.id})`);
+  // Add navigation logic here
+};
+
 export function PlatformCardsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -225,7 +231,7 @@ export function PlatformCardsSection() {
                   <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-slate-800 transition-colors">
                     {platform.title}
                   </h3>
-                  
+
                   <p className="text-gray-600 mb-6 flex-grow leading-relaxed">
                     {platform.description}
                   </p>
@@ -287,6 +293,31 @@ export function PlatformCardsSection() {
                     </div>
                   </div>
 
+                  {/* Action Button */}
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-auto"
+                  >
+                    <button
+                      onClick={() => handlePlatformClick(platform)}
+                      className={`w-full py-4 px-6 rounded-xl font-bold text-white bg-gradient-to-r ${platform.gradient} hover:shadow-lg transition-all duration-300 group-hover:shadow-xl relative overflow-hidden`}
+                    >
+                      <span className="relative z-10 flex items-center justify-center gap-2">
+                        Visit Now
+                        <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                      <motion.div
+                        className="absolute inset-0 bg-white/20"
+                        initial={{ x: '-100%' }}
+                        whileHover={{ x: '100%' }}
+                        transition={{ duration: 0.5 }}
+                      />
+                    </button>
+                  </motion.div>
+
                   {/* Floating Elements */}
                   <motion.div
                     animate={{ y: [0, -10, 0], opacity: [0.3, 1, 0.3] }}
@@ -330,4 +361,4 @@ export function PlatformCardsSection() {
       </div>
     </section>
   );
-                        }
+}
