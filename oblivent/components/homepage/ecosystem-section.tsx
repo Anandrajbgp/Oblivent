@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Globe, Users, Rocket, Zap, Brain, Shield } from "lucide-react";
+import { Counter as SharedCounter } from "@/components/shared/counter";
 
 // Helper to calculate dynamic count based on days passed
 const getBaseCount = (baseValue: number) => {
@@ -207,12 +208,12 @@ export function EcosystemSection() {
               </motion.div>
 
               <div className="text-3xl font-bold text-slate-900 mb-2">
-                <Counter
+                <SharedCounter
                   end={feature.count}
                   suffix={feature.suffix}
                   duration={2}
                   isK={feature.isK}
-                  prefix={feature.prefix || ""}
+                  prefix={feature.prefix}
                 />
               </div>
 
