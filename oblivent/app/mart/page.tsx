@@ -1,5 +1,5 @@
 
-import { MartHero } from "@/components/mart/hero";
+// import { MartHero } from "@/components/mart/hero";
 import { SmartCategories } from "@/components/mart/smart-categories";
 import { DealsFlashSales } from "@/components/mart/deals-flash-sales";
 import { TrendingProducts } from "@/components/mart/trending-products";
@@ -11,7 +11,7 @@ import { MartCTABanner } from "@/components/mart/cta-banner";
 export default function MartPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-rose-100">
-      <MartHero />
+      {/* <MartHero /> */}
       <SmartCategories />
       <DealsFlashSales />
       <TrendingProducts />

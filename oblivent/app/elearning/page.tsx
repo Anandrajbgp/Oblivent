@@ -1,5 +1,5 @@
 
-import { HeroSection } from "@/components/elearning/hero";
+// import { HeroSection } from "@/components/elearning/hero";
 import { AboutSection } from "@/components/elearning/about";
 import { PackagesSection } from "@/components/elearning/packages";
 import { LifeMasterySection } from "@/components/elearning/life-mastery";
@@ -11,7 +11,7 @@ import { CTABannerSection } from "@/components/elearning/cta-banner";
 export default function ELearningPage() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-violet-50 to-purple-100">
-      <HeroSection />
+      {/* <HeroSection /> */}
       <AboutSection />
       <PackagesSection />
       <LifeMasterySection />
