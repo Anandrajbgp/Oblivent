@@ -82,69 +82,7 @@ export function Footer() {
       </div>
 
       <div className="relative z-10">
-        {/* Newsletter Section */}
-        <div className="border-b border-white/10">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center max-w-3xl mx-auto"
-            >
-              <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                >
-                  <Sparkles className="w-6 h-6 text-yellow-400" />
-                </motion.div>
-                <span className="text-white font-semibold">Stay Updated</span>
-              </div>
-
-              <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                  Get the Latest Updates
-                </span>
-              </h3>
-              
-              <p className="text-xl text-gray-300 mb-8">
-                Subscribe to our newsletter and be the first to know about new features, platforms, and exclusive offers.
-              </p>
-
-              <form 
-                className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  const form = e.currentTarget;
-                  const formData = new FormData(form);
-                  const email = formData.get("email") as string;
-                  if (email) {
-                    alert("Thank you for subscribing! We'll keep you updated.");
-                    form.reset();
-                  }
-                }}
-              >
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-6 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                  required
-                />
-                <Button 
-                  type="submit"
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105"
-                >
-                  <span className="flex items-center gap-2">
-                    Subscribe
-                    <ArrowRight className="w-4 h-4" />
-                  </span>
-                </Button>
-              </form>
-            </motion.div>
-          </div>
-        </div>
+        
 
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
