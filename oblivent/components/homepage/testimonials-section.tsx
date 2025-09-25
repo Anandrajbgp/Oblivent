@@ -85,7 +85,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Software Engineer",
     company: "Tech Innovations Pvt Ltd",
-    image: "PS",
+    image: "/images/testimonials/priya-sharma.jpg",
     rating: 5,
     text: "Oblivent has completely transformed how I learn and work. The e-learning platform helped me master React, and the app store has amazing productivity tools. The integration between platforms is seamless!",
     platform: "E-Learning & Apps",
@@ -96,7 +96,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     role: "Business Owner",
     company: "Kumar Digital Solutions",
-    image: "RK",
+    image: "/images/testimonials/rajesh-kumar.jpg",
     rating: 5,
     text: "The digital agency platform helped us scale our business 10x in just 6 months. Their web development and marketing services are top-notch. Highly recommend for any business looking to go digital!",
     platform: "Digital Agency",
@@ -107,7 +107,7 @@ const testimonials = [
     name: "Anjali Patel",
     role: "UPSC Aspirant",
     company: "Delhi University",
-    image: "AP",
+    image: "/images/testimonials/anjali-patel.jpg",
     rating: 5,
     text: "The competition exam platform is incredible! Mock tests are exactly like the real exam, and the performance analytics helped me identify my weak areas. Finally cleared UPSC on my second attempt!",
     platform: "Competition Exams",
@@ -118,7 +118,7 @@ const testimonials = [
     name: "Vikram Singh",
     role: "Investment Analyst",
     company: "Alpha Capital",
-    image: "VS",
+    image: "/images/testimonials/vikram-singh.jpg",
     rating: 5,
     text: "The trading platform's AI insights are game-changing. Real-time data analysis and risk management tools have improved my portfolio performance by 40%. Professional-grade tools at an affordable price!",
     platform: "Broker Trading",
@@ -129,7 +129,7 @@ const testimonials = [
     name: "Sneha Gupta",
     role: "Freelance Designer",
     company: "Independent",
-    image: "SG",
+    image: "/images/testimonials/sneha-gupta.jpg",
     rating: 5,
     text: "Love the app store! Found amazing design tools and productivity apps that weren't available elsewhere. The mart also has great tech accessories at competitive prices. One platform for everything!",
     platform: "Apps & Mart",
@@ -140,7 +140,7 @@ const testimonials = [
     name: "Arjun Mehta",
     role: "Startup Founder",
     company: "InnovateTech",
-    image: "AM",
+    image: "/images/testimonials/arjun-mehta.jpg",
     rating: 5,
     text: "Used multiple platforms - e-learning for team training, agency for our website, and trading for investment. The unified account experience is fantastic. Saved us thousands in subscription costs!",
     platform: "Multiple Platforms",
@@ -238,9 +238,11 @@ export function TestimonialsSection() {
 
               {/* User Info */}
               <div className="flex items-center gap-4">
-                <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${currentTestimonial.gradient} flex items-center justify-center text-white font-bold`}>
-                  {currentTestimonial.image}
-                </div>
+                <img 
+                  src={currentTestimonial.image} 
+                  alt={currentTestimonial.name}
+                  className="w-12 h-12 rounded-full border-2 border-white shadow-lg"
+                />
                 <div>
                   <div className="font-semibold text-gray-900">{currentTestimonial.name}</div>
                   <div className="text-sm text-gray-600">{currentTestimonial.role}</div>
@@ -320,9 +322,11 @@ export function TestimonialsSection() {
 
                 {/* User Info */}
                 <div className="flex items-center gap-4 relative z-10">
-                  <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${testimonial.gradient} flex items-center justify-center text-white font-bold`}>
-                    {testimonial.image}
-                  </div>
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full border-2 border-white shadow-lg"
+                  />
                   <div>
                     <div className="font-semibold text-gray-900">{testimonial.name}</div>
                     <div className="text-sm text-gray-600">{testimonial.role}</div>
@@ -385,8 +389,6 @@ export function TestimonialsSection() {
             <ChevronRight className="w-5 h-5" />
           </Button>
         </motion.div>
-
-        
       </div>
     </section>
   );

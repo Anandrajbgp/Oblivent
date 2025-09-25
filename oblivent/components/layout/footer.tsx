@@ -8,10 +8,8 @@ import {
   Phone, 
   MapPin, 
   Facebook, 
-  Twitter, 
   Instagram, 
-  Linkedin, 
-  Github,
+  Youtube,
   ArrowRight,
   Sparkles
 } from "lucide-react";
@@ -66,10 +64,8 @@ const footerSections = [
 
 const socialLinks = [
   { name: "Facebook", icon: Facebook, href: "https://facebook.com/oblivent", color: "hover:text-blue-500" },
-  { name: "Twitter", icon: Twitter, href: "https://twitter.com/oblivent", color: "hover:text-sky-400" },
   { name: "Instagram", icon: Instagram, href: "https://instagram.com/oblivent", color: "hover:text-pink-500" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/oblivent", color: "hover:text-blue-600" },
-  { name: "GitHub", icon: Github, href: "https://github.com/oblivent", color: "hover:text-gray-400" },
+  { name: "YouTube", icon: Youtube, href: "https://youtube.com/@oblivent", color: "hover:text-red-500" },
 ];
 
 export function Footer() {
