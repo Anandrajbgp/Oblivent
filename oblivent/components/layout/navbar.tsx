@@ -38,7 +38,22 @@ export function Navbar() {
                    px-4 sm:px-6 py-3 flex items-center justify-between   
                    shadow-2xl border border-blue-500/20 z-50"
       >
-        {/* Left Side - Menu Button */}
+        {/* Left Side - Logo */}
+        <div className="flex items-center">
+          <Image 
+            src="/oblivent-logo.png" 
+            alt="Oblivent Logo" 
+            width={128}
+            height={128}
+            className="h-14 sm:h-20 w-auto"
+            priority
+          />
+        </div>
+
+        {/* Center - Empty space for balance */}
+        <div className="flex-1"></div>
+
+        {/* Right Side - Menu Button */}
         <div className="flex items-center space-x-3">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -46,21 +61,6 @@ export function Navbar() {
           >
             {isOpen ? <X size={28} /> : <Home size={28} />}
           </button>
-        </div>
-
-        {/* Center - Empty space for balance */}
-        <div className="flex-1"></div>
-
-        {/* Right Side - Larger Logo */}
-        <div className="flex items-center">
-          <Image 
-            src="/oblivent-logo.png" 
-            alt="Oblivent Logo" 
-            width={128} // bigger HD logo
-            height={128}
-            className="h-14 sm:h-20 w-auto" // adjust size
-            priority
-          />
         </div>
       </nav>
 
@@ -103,7 +103,7 @@ export function Navbar() {
                       href={item.href}
                       onClick={() => setIsOpen(false)}
                       className="flex items-center gap-4 px-4 py-4 rounded-xl   
-                                 hover:bg-white/10 transition-all cursor-pointer group w-full
+                                 hover:bg-transparent transition-all cursor-pointer group w-full
                                  text-base sm:text-lg"
                     >
                       <motion.div
@@ -113,7 +113,7 @@ export function Navbar() {
                         }}
                         className="flex items-center gap-4 w-full"
                       >
-                        <div className="p-2 rounded-lg bg-blue-500/20 group-hover:bg-blue-500/30 transition-colors flex-shrink-0">
+                        <div className="p-2 rounded-lg bg-transparent group-hover:bg-transparent transition-colors flex-shrink-0">
                           {item.icon}
                         </div>
                         <span className="font-medium text-white truncate">
