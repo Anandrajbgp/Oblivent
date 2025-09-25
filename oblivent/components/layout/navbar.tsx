@@ -11,6 +11,7 @@ import {
   Globe,
   Zap, // Using Zap as the Test icon
   LogIn,
+  Menu,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -59,7 +60,7 @@ export function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             className="text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
           >
-            {isOpen ? <X size={28} /> : <Home size={28} />}
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </nav>
@@ -103,7 +104,7 @@ export function Navbar() {
                       href={item.href}
                       onClick={() => setIsOpen(false)}
                       className="flex items-center gap-4 px-4 py-4 rounded-xl   
-                                 hover:bg-transparent transition-all cursor-pointer group w-full
+                                 hover:bg-white/5 transition-all cursor-pointer group w-full
                                  text-base sm:text-lg"
                     >
                       <motion.div
@@ -113,7 +114,7 @@ export function Navbar() {
                         }}
                         className="flex items-center gap-4 w-full"
                       >
-                        <div className="p-2 rounded-lg bg-transparent group-hover:bg-transparent transition-colors flex-shrink-0">
+                        <div className="p-2 rounded-lg bg-blue-500/20 group-hover:bg-blue-500/30 transition-colors flex-shrink-0">
                           {item.icon}
                         </div>
                         <span className="font-medium text-white truncate">
