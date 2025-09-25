@@ -51,11 +51,9 @@ export function AgencyFooter() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, href: "https://facebook.com/oblivent-agency", label: "Facebook" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com/oblivent-agency", label: "Twitter" },
-    { icon: <Instagram size={20} />, href: "https://instagram.com/oblivent-agency", label: "Instagram" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com/company/oblivent-agency", label: "LinkedIn" },
-    { icon: <Youtube size={20} />, href: "https://youtube.com/oblivent-agency", label: "YouTube" },
+    { icon: <Facebook size={20} />, href: "https://www.facebook.com/share/1D3nFtxV6h/", label: "Facebook" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/oblivent?igsh=MTFydWtyMWU2YTduNA==", label: "Instagram" },
+    { icon: <Youtube size={20} />, href: "https://youtube.com/@oblivent?feature=shared", label: "YouTube" },
   ];
 
   return (

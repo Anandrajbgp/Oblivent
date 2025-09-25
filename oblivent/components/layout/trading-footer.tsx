@@ -51,11 +51,9 @@ export function TradingFooter() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, href: "https://facebook.com/oblivent-trading", label: "Facebook" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com/oblivent-trading", label: "Twitter" },
-    { icon: <Instagram size={20} />, href: "https://instagram.com/oblivent-trading", label: "Instagram" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com/company/oblivent-trading", label: "LinkedIn" },
-    { icon: <Youtube size={20} />, href: "https://youtube.com/oblivent-trading", label: "YouTube" },
+    { icon: <Facebook size={20} />, href: "https://www.facebook.com/share/1D3nFtxV6h/", label: "Facebook" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/oblivent?igsh=MTFydWtyMWU2YTduNA==", label: "Instagram" },
+    { icon: <Youtube size={20} />, href: "https://youtube.com/@oblivent?feature=shared", label: "YouTube" },
   ];
 
   return (

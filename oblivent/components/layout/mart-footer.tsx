@@ -51,11 +51,9 @@ export function MartFooter() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, href: "https://facebook.com/oblivent-mart", label: "Facebook" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com/oblivent-mart", label: "Twitter" },
-    { icon: <Instagram size={20} />, href: "https://instagram.com/oblivent-mart", label: "Instagram" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com/company/oblivent-mart", label: "LinkedIn" },
-    { icon: <Youtube size={20} />, href: "https://youtube.com/oblivent-mart", label: "YouTube" },
+    { icon: <Facebook size={20} />, href: "https://www.facebook.com/share/1D3nFtxV6h/", label: "Facebook" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/oblivent?igsh=MTFydWtyMWU2YTduNA==", label: "Instagram" },
+    { icon: <Youtube size={20} />, href: "https://youtube.com/@oblivent?feature=shared", label: "YouTube" },
   ];
 
   return (

@@ -63,9 +63,9 @@ const footerSections = [
 ];
 
 const socialLinks = [
-  { name: "Facebook", icon: Facebook, href: "https://facebook.com/oblivent", color: "hover:text-blue-500" },
-  { name: "Instagram", icon: Instagram, href: "https://instagram.com/oblivent", color: "hover:text-pink-500" },
-  { name: "YouTube", icon: Youtube, href: "https://youtube.com/@oblivent", color: "hover:text-red-500" },
+  { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/share/1D3nFtxV6h/", color: "hover:text-blue-500" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/oblivent?igsh=MTFydWtyMWU2YTduNA==", color: "hover:text-pink-500" },
+  { name: "YouTube", icon: Youtube, href: "https://youtube.com/@oblivent?feature=shared", color: "hover:text-red-500" },
 ];
 
 export function Footer() {

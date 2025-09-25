@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -17,7 +16,8 @@ import {
   Package,
   Users,
   Trophy,
-  Heart
+  Heart,
+  Youtube
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -69,11 +69,12 @@ const footerSections = [
 ];
 
 const socialLinks = [
-  { name: "Facebook", icon: Facebook, href: "https://facebook.com/oblivent", color: "hover:text-blue-500" },
+  { name: "Facebook", icon: Facebook, href: "https://www.facebook.com/share/1D3nFtxV6h/", color: "hover:text-blue-500" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com/oblivent", color: "hover:text-sky-400" },
-  { name: "Instagram", icon: Instagram, href: "https://instagram.com/oblivent", color: "hover:text-pink-500" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/oblivent?igsh=MTFydWtyMWU2YTduNA==", color: "hover:text-pink-500" },
   { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/oblivent", color: "hover:text-blue-600" },
   { name: "GitHub", icon: Github, href: "https://github.com/oblivent", color: "hover:text-gray-400" },
+  { name: "YouTube", icon: Youtube, href: "https://youtube.com/@oblivent?feature=shared", color: "hover:text-red-500" },
 ];
 
 export function AppsFooter() {
@@ -111,7 +112,7 @@ export function AppsFooter() {
                   New Tools Weekly
                 </span>
               </h3>
-              
+
               <p className="text-xl text-gray-300 mb-8">
                 Be the first to discover amazing new tools, exclusive bundles, and creator spotlights delivered to your inbox.
               </p>
@@ -172,7 +173,7 @@ export function AppsFooter() {
                     <div className="text-sm text-purple-200">Premium Tools Hub</div>
                   </div>
                 </div>
-                
+
                 <p className="text-gray-300 leading-relaxed mb-6">
                   Your ultimate destination for curated digital tools, apps, and websites. 
                   Discover, download, and boost your productivity with AI-powered recommendations.

@@ -51,11 +51,9 @@ export function TestFooter() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, href: "https://facebook.com/oblivent-test", label: "Facebook" },
-    { icon: <Twitter size={20} />, href: "https://twitter.com/oblivent-test", label: "Twitter" },
-    { icon: <Instagram size={20} />, href: "https://instagram.com/oblivent-test", label: "Instagram" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com/company/oblivent-test", label: "LinkedIn" },
-    { icon: <Youtube size={20} />, href: "https://youtube.com/oblivent-test", label: "YouTube" },
+    { icon: <Facebook size={20} />, href: "https://www.facebook.com/share/1D3nFtxV6h/", label: "Facebook" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/oblivent?igsh=MTFydWtyMWU2YTduNA==", label: "Instagram" },
+    { icon: <Youtube size={20} />, href: "https://youtube.com/@oblivent?feature=shared", label: "YouTube" },
   ];
 
   return (
