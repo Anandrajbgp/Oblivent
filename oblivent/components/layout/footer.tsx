@@ -92,14 +92,9 @@ export function Footer() {
                 viewport={{ once: true }}
               >
                 <div className="flex items-center gap-3 mb-6">
-                  <Image 
-                    src="/oblivent-logo.png" 
-                    alt="Oblivent Logo" 
-                    width={48} 
-                    height={48}
-                    className="h-12 w-auto" 
-                    priority
-                  />
+                  <div className="text-3xl font-bold text-white">
+                    Oblivent Pvt. Ltd.
+                  </div>
                 </div>
                 
                 <p className="text-gray-300 leading-relaxed mb-6">
